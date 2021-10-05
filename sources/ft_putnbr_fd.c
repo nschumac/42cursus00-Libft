@@ -6,13 +6,13 @@
 /*   By: nschumac <nschumac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/16 10:50:40 by nschumac          #+#    #+#             */
-/*   Updated: 2021/10/05 21:14:12 by nschumac         ###   ########.fr       */
+/*   Updated: 2021/10/05 22:44:58 by nschumac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-char	ft_printzero(long num, int fd)
+static char	ft_printzero(long num, int fd)
 {
 	if (num == 0)
 	{

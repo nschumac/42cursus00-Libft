@@ -6,20 +6,13 @@
 /*   By: nschumac <nschumac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 18:02:46 by nschumac          #+#    #+#             */
-/*   Updated: 2021/10/05 21:13:40 by nschumac         ###   ########.fr       */
+/*   Updated: 2021/10/05 22:50:24 by nschumac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-int	ft_abs(int num)
-{
-	if (num < 0)
-		return (num * -1);
-	return (num);
-}
-
-char	*ft_handlezero(void)
+static char	*ft_handlezero(void)
 {
 	char	*ret;
 
@@ -53,7 +46,7 @@ char	*ft_itoa(int n)
 	yeet[length] = '\0';
 	while (n != 0)
 	{
-		yeet[--length] = ft_abs(n % 10) + '0';
+		yeet[--length] = (int) ft_llabs(n % 10) + '0';
 		n /= 10;
 	}
 	return (yeet);

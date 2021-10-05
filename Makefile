@@ -13,6 +13,7 @@ SOURCES =	sources/ft_atoi.c			\
 			sources/ft_isprint.c		\
 			sources/ft_isspace.c		\
 			sources/ft_itoa.c			\
+			sources/ft_llabs.c			\
 			sources/ft_lstadd_back.c	\
 			sources/ft_lstadd_front.c	\
 			sources/ft_lstclear.c		\

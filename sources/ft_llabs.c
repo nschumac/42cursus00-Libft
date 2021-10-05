@@ -1,30 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memccpy.c                                       :+:      :+:    :+:   */
+/*   ft_abs.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nschumac <nschumac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/06/15 12:53:35 by nschumac          #+#    #+#             */
-/*   Updated: 2021/10/05 22:42:51 by nschumac         ###   ########.fr       */
+/*   Created: 2021/10/05 22:33:49 by nschumac          #+#    #+#             */
+/*   Updated: 2021/10/05 22:34:18 by nschumac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
+long long	ft_llabs(long long num)
 {
-	size_t	count;
-
-	count = 0;
-	while (count < n)
-	{
-		*((unsigned char *)dest + count) = *((unsigned char *)src + count);
-		if (*((unsigned char *)src + count) == (unsigned char)c)
-		{
-			return ((unsigned char *)dest + count + 1);
-		}
-		count++;
-	}
-	return (0);
+	if (num < 0)
+		return (num * -1);
+	return (num);
 }
