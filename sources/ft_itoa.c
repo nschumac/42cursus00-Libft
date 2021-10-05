@@ -6,12 +6,11 @@
 /*   By: nschumac <nschumac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 18:02:46 by nschumac          #+#    #+#             */
-/*   Updated: 2021/10/05 20:38:41 by nschumac         ###   ########.fr       */
+/*   Updated: 2021/10/05 21:13:40 by nschumac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
-#include <stdlib.h>
 
 int	ft_abs(int num)
 {

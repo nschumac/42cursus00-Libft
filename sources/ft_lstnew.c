@@ -6,12 +6,11 @@
 /*   By: nschumac <nschumac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/16 20:13:43 by nschumac          #+#    #+#             */
-/*   Updated: 2021/10/05 20:38:59 by nschumac         ###   ########.fr       */
+/*   Updated: 2021/10/05 21:13:54 by nschumac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
-#include <stdlib.h>
 
 t_list	*ft_lstnew(void *content)
 {

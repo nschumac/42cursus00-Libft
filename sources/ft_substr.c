@@ -6,12 +6,11 @@
 /*   By: nschumac <nschumac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 15:54:27 by nschumac          #+#    #+#             */
-/*   Updated: 2021/10/05 20:40:08 by nschumac         ###   ########.fr       */
+/*   Updated: 2021/10/05 21:14:49 by nschumac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
-#include <stdlib.h>
 
 char	*ft_substr(const char *s, unsigned int start, size_t len)
 {

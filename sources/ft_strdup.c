@@ -6,12 +6,11 @@
 /*   By: nschumac <nschumac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 15:09:19 by nschumac          #+#    #+#             */
-/*   Updated: 2021/10/05 20:39:46 by nschumac         ###   ########.fr       */
+/*   Updated: 2021/10/05 21:14:25 by nschumac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
-#include <stdlib.h>
 
 char	*ft_strdup(const char *str)
 {

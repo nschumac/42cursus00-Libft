@@ -6,12 +6,11 @@
 /*   By: nschumac <nschumac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 16:54:19 by nschumac          #+#    #+#             */
-/*   Updated: 2021/10/05 20:39:41 by nschumac         ###   ########.fr       */
+/*   Updated: 2021/10/05 21:14:19 by nschumac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
-#include <stdlib.h>
 
 int	darraysize(char **arr)
 {

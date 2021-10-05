@@ -6,14 +6,19 @@
 /*   By: nschumac <nschumac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 18:39:43 by nschumac          #+#    #+#             */
-/*   Updated: 2021/10/05 20:53:36 by nschumac         ###   ########.fr       */
+/*   Updated: 2021/10/05 21:15:17 by nschumac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+/*
+** Includes
+*/
+# include <unistd.h>
 # include <stdlib.h>
+# include <string.
 
 int				ft_atoi(const char *str);
 

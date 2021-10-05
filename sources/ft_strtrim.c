@@ -6,12 +6,11 @@
 /*   By: nschumac <nschumac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 16:28:57 by nschumac          #+#    #+#             */
-/*   Updated: 2021/10/05 20:40:05 by nschumac         ###   ########.fr       */
+/*   Updated: 2021/10/05 21:14:44 by nschumac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
-#include <stdlib.h>
 
 char	ft_ispartofset(const char c, const char *set)
 {

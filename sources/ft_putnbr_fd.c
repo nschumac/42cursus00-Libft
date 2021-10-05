@@ -6,12 +6,11 @@
 /*   By: nschumac <nschumac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/16 10:50:40 by nschumac          #+#    #+#             */
-/*   Updated: 2021/10/05 20:39:35 by nschumac         ###   ########.fr       */
+/*   Updated: 2021/10/05 21:14:12 by nschumac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
-#include <unistd.h>
 
 char	ft_printzero(long num, int fd)
 {
