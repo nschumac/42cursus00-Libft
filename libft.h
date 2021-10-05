@@ -6,7 +6,7 @@
 /*   By: nschumac <nschumac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 18:39:43 by nschumac          #+#    #+#             */
-/*   Updated: 2021/10/05 21:21:23 by nschumac         ###   ########.fr       */
+/*   Updated: 2021/10/05 21:59:17 by nschumac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ char			*ft_strrchr(const char *str, int chr);
 
 char			*ft_strtrim(const char *s, const char *set);
 
-char			*ft_substr(const char *s, unsigned int startm,
+char			*ft_substr(const char *s, unsigned int start,
 					size_t len);
 
 int				ft_tolower(int c);

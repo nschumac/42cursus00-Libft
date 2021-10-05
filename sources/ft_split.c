@@ -5,66 +5,75 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nschumac <nschumac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/06/15 16:54:19 by nschumac          #+#    #+#             */
-/*   Updated: 2021/10/05 21:14:19 by nschumac         ###   ########.fr       */
+/*   Created: 2021/10/05 21:38:38 by nschumac          #+#    #+#             */
+/*   Updated: 2021/10/05 22:26:11 by nschumac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-int	darraysize(char **arr)
+static int	ft_freemem(char **org, char *str)
 {
-	int				count;
+	int	count;
 
 	count = 0;
-	while (arr[count] != 0)
-		count++;
-	return (count);
+	while (org[count])
+		free(org[count++]);
+	free(org);
+	if (str)
+		free(str);
+	return (1);
 }
 
-char	**copdarray(char **arr1, char *newstring)
+static char	**ft_dstrappend(char **org, char *app)
 {
-	char			**buf;
-	int				count;
+	char	**buf;
+	int		org_size;
+	int		count;
 
+	org_size = 0;
+	while (org[org_size])
+		org_size++;
+	buf = (char **)malloc((org_size + 2) * sizeof(char *));
+	if (!buf)
+		return (NULL);
 	count = 0;
-	buf = (char **)malloc((darraysize(arr1) + 2) * sizeof(char *));
-	while (count < darraysize(arr1))
+	while (org[count])
 	{
-		buf[count] = arr1[count];
+		buf[count] = org[count];
 		count++;
 	}
-	free(arr1);
-	buf[count] = newstring;
-	buf[count + 1] = 0;
+	free(org);
+	buf[count] = app;
+	buf[count + 1] = NULL;
 	return (buf);
 }
 
 char	**ft_split(const char *s, char c)
 {
-	int				count;
-	char			*buf;
-	char			**ret;
-	char			*new;
+	char	**ret;
+	char	*new;
+	int		count;
 
-	count = 0;
-	ret = (char **)malloc(sizeof(char *));
-	if (!ret || !s)
+	if (!s)
 		return (0);
-	ret[0] = 0;
+	ret = (char **)ft_calloc(1, sizeof(char *));
+	count = 0;
 	while (s[count] != '\0')
 	{
 		if (s[count] != c)
 		{
-			buf = (char *)&s[count];
+			new = (char *)&s[count];
 			while (s[count] != '\0' && s[count] != c)
 				count++;
-			new = (char *)malloc(&s[count] - buf + 1);
-			ft_strlcpy(new, buf, &s[count] - buf + 1);
-			ret = copdarray(ret, new);
+			new = ft_substr(s, new - &s[0], &s[count--] - new);
+			if (!new && ft_freemem(ret, NULL))
+				return (NULL);
+			ret = ft_dstrappend(ret, new);
+			if (!ret && ft_freemem(ret, new))
+				return (NULL);
 		}
-		else
-			count++;
+		count++;
 	}
 	return (ret);
 }
