@@ -6,7 +6,7 @@
 /*   By: nschumac <nschumac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 18:39:43 by nschumac          #+#    #+#             */
-/*   Updated: 2021/10/05 21:15:17 by nschumac         ###   ########.fr       */
+/*   Updated: 2021/10/05 21:21:23 by nschumac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 */
 # include <unistd.h>
 # include <stdlib.h>
-# include <string.
+# include <string.h>
 
 int				ft_atoi(const char *str);
 
@@ -42,7 +42,7 @@ int				ft_isprint(int c);
 
 char			*ft_itoa(int num);
 
-void			*ft_memccpy(void *restrict dest, const void *restrict src,
+void			*ft_memccpy(void *dest, const void *src,
 					int c, size_t n);
 
 void			*ft_memchr(void *ptr, int value, size_t n);

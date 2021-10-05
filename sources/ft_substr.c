@@ -6,7 +6,7 @@
 /*   By: nschumac <nschumac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 15:54:27 by nschumac          #+#    #+#             */
-/*   Updated: 2021/10/05 21:14:49 by nschumac         ###   ########.fr       */
+/*   Updated: 2021/10/05 21:32:48 by nschumac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,15 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
 	char	*substr;
 	size_t	count;
+	size_t	str_len;
 
 	count = 0;
 	if (!s)
 		return (NULL);
-	if (start >= ft_strlen(s))
+	str_len = ft_strlen(s);
+	if (start >= str_len) 
 		return (ft_strdup(""));
-	substr = (char *)malloc(len + 1);
+	substr = (char *)malloc(str_len - start + 1);
 	if (!substr)
 		return (substr);
 	while (count < len && s[start + count] != '\0')

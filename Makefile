@@ -56,6 +56,8 @@ OBJECTS = $(SOURCES:.c=.o)
 
 all: $(NAME)
 
+bonus: all
+
 $(NAME): $(OBJECTS)
 	@ar cr $@ $(OBJECTS)
 	@echo libft Compiled!

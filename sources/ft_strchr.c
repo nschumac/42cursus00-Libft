@@ -6,7 +6,7 @@
 /*   By: nschumac <nschumac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 12:54:39 by nschumac          #+#    #+#             */
-/*   Updated: 2021/10/05 20:39:43 by nschumac         ###   ########.fr       */
+/*   Updated: 2021/10/05 21:24:05 by nschumac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,11 @@ char	*ft_strchr(char *str, int chr)
 {
 	while (*str != '\0')
 	{
-		if (*str == chr)
+		if (*str == (char) chr)
 			return (str);
 		str++;
 	}
-	if (*str == chr)
+	if (*str == (char) chr)
 		return (str);
 	else
 		return (0);
