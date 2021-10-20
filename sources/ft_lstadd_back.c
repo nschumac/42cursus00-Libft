@@ -6,25 +6,25 @@
 /*   By: nschumac <nschumac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/16 21:05:40 by nschumac          #+#    #+#             */
-/*   Updated: 2021/10/05 20:38:43 by nschumac         ###   ########.fr       */
+/*   Updated: 2021/10/20 16:10:11 by nschumac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-void	ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstadd_back(t_list **lst, t_list *toadd)
 {
 	t_list	*lstbuf;
 
-	if (!lst || !new)
+	if (!lst || !toadd)
 		return ;
 	if (!(*lst))
 	{
-		*lst = new;
+		*lst = toadd;
 		return ;
 	}
 	lstbuf = *lst;
 	while (lstbuf->next)
 		lstbuf = lstbuf->next;
-	lstbuf->next = new;
+	lstbuf->next = toadd;
 }

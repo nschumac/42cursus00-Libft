@@ -6,7 +6,7 @@
 /*   By: nschumac <nschumac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 18:39:43 by nschumac          #+#    #+#             */
-/*   Updated: 2021/10/20 16:00:05 by nschumac         ###   ########.fr       */
+/*   Updated: 2021/10/20 16:09:11 by nschumac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,8 +49,8 @@ char			*ft_itoa(int n);
 char			*ft_ulltoabase(unsigned long long num, const char *set);
 long long		ft_llabs(long long num);
 
-void			ft_lstadd_back(t_list **lst, t_list *new);
-void			ft_lstadd_front(t_list **lst, t_list *new);
+void			ft_lstadd_back(t_list **lst, t_list *toadd);
+void			ft_lstadd_front(t_list **lst, t_list *toadd);
 void			ft_lstclear(t_list **lst, void (*del)(void *));
 void			ft_lstdelone(t_list *lst, void (*del)(void *));
 void			ft_lstiter(t_list *lst, void (*f)(void *));
