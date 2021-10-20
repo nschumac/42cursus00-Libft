@@ -49,6 +49,7 @@ SOURCES =	sources/ft_atoi.c			\
 			sources/ft_substr.c			\
 			sources/ft_tolower.c		\
 			sources/ft_toupper.c		\
+			sources/ft_ulltoabase.c		\
 
 OBJECTS = $(SOURCES:.c=.o)
 
