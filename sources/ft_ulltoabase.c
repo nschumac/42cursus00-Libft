@@ -6,7 +6,7 @@
 /*   By: nschumac <nschumac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/20 15:49:19 by nschumac          #+#    #+#             */
-/*   Updated: 2021/10/20 15:58:33 by nschumac         ###   ########.fr       */
+/*   Updated: 2021/10/28 20:16:12 by nschumac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_ulltoabase(unsigned long long num, const char *set)
 	while (++count && pow > 0)
 	{
 		ret[count - 1] = set[(num / pow) % set_size];
-		pow /= set_size; 
+		pow /= set_size;
 	}
 	ret[count - 1] = '\0';
 	return (ret);
