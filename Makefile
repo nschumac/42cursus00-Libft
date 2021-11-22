@@ -54,7 +54,7 @@ SOURCES =	sources/ft_atoi.c			\
 OBJECTS = $(SOURCES:.c=.o)
 
 %.o: %.c
-	@$(CC) $(CCFLAGS) -o $@ -c $<
+	@$(CC) $(CFLAGS) -o $@ -c $<
 
 all: $(NAME)
 
